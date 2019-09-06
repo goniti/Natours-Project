@@ -1,0 +1,4 @@
+body {
+  @include font(1rem, $darkgrey, 400, 1.7);
+  padding: 30px;
+}

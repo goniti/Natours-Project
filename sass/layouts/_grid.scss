@@ -1,0 +1,19 @@
+.header__logo {
+  @include position-absolute(40px, null, null, 40px);
+}
+
+.header__title {
+  &--main,
+  &--sub {
+    @include flexbox;
+    //display: block;
+  }
+}
+
+.header__text {
+  @include flexbox;
+  @include align-items(center);
+  @include justify-content(center);
+  // @include position-absolute(50%, null, null, 50%);
+  // transform: translate(-50%, -50%);
+}
