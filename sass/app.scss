@@ -2,24 +2,23 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
- @import "compass";
+@import "compass";
 
- // Reset
- @import "compass/reset";
- 
- // Helpers
- @import "helpers/variables";
- @import "helpers/mixins";
- @import "helpers/placeholders";
- 
- // Layouts
- @import "layouts/grid";
- 
- // Base
- @import "base/base";
- 
- // Components
+// Reset
+@import "compass/reset";
 
- 
- // Pages
- @import "pages/main";
+// Helpers
+@import "helpers/variables";
+@import "helpers/mixins";
+//@import "helpers/placeholders";
+
+// Base
+@import "base/base";
+
+// Layouts
+@import "layouts/grid";
+
+// components
+@import "components/header";
+// Pages
+@import "pages/main";

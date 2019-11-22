@@ -67,23 +67,23 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 1, ../sass/layouts/_grid.scss */
+/* line 1, ../sass/base/_base.scss */
+body {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  color: #777;
+  font-weight: 400;
+  line-height: 1.7;
+  padding: 30px;
+}
+
+/* line 2, ../sass/layouts/_grid.scss */
 .header__logo {
   position: absolute;
   top: 40px;
   left: 40px;
 }
-
-/* line 6, ../sass/layouts/_grid.scss */
-.header__title--main, .header__title--sub {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-}
-
-/* line 13, ../sass/layouts/_grid.scss */
+/* line 5, ../sass/layouts/_grid.scss */
 .header__text {
   display: -webkit-box;
   display: -moz-box;
@@ -100,18 +100,24 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   justify-content: center;
   -ms-flex-pack: center;
 }
-
-/* line 1, ../sass/base/_base.scss */
-body {
-  font-family: "Lato", Helvetica, Arial, sans-serif;
-  font-size: 1rem;
-  color: #777;
-  font-weight: 400;
-  line-height: 1.7;
-  padding: 30px;
+/* line 12, ../sass/layouts/_grid.scss */
+.header__main {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+/* line 16, ../sass/layouts/_grid.scss */
+.header__sub {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
 }
 
-/* line 1, ../sass/pages/_main.scss */
+/* line 1, ../sass/components/_header.scss */
 .header {
   height: 95vh;
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg);
@@ -120,35 +126,32 @@ body {
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
 }
-
-/* line 11, ../sass/pages/_main.scss */
-.header__logo--img {
+/* line 9, ../sass/components/_header.scss */
+.header__img {
   height: 35px;
 }
-
-/* line 16, ../sass/pages/_main.scss */
+/* line 12, ../sass/components/_header.scss */
+.header__text {
+  height: 100%;
+}
+/* line 15, ../sass/components/_header.scss */
 .header__title {
   color: #fff;
   text-transform: uppercase;
 }
-/* line 19, ../sass/pages/_main.scss */
-.header__title--main {
+/* line 19, ../sass/components/_header.scss */
+.header__main {
   font-family: "Lato", Helvetica, Arial, sans-serif;
   font-size: 60px;
   font-weight: 400;
   letter-spacing: 35px;
 }
-/* line 23, ../sass/pages/_main.scss */
-.header__title--sub {
+/* line 22, ../sass/components/_header.scss */
+.header__sub {
   font-family: "Lato", Helvetica, Arial, sans-serif;
   font-size: 20px;
   font-weight: 700;
   letter-spacing: 17.4px;
-}
-
-/* line 28, ../sass/pages/_main.scss */
-.header__text {
-  height: 100%;
 }
 
 /*# sourceMappingURL=app.css.map */
