@@ -2,18 +2,16 @@
   &__logo {
     @include position-absolute(40px, null, null, 40px);
   }
-  &__text {
+  &__hero {
     @include flexbox;
     @include align-items(center);
     @include justify-content(center);
+    @include flex-direction(column);
     // @include position-absolute(50%, null, null, 50%);
     // transform: translate(-50%, -50%);
   }
-  &__main {
-    @include flexbox;
-    //display: block;
-  }
-  &__sub {
+  &__title,
+  &__subtitle {
     @include flexbox;
     //display: block;
   }

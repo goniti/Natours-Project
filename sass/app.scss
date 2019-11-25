@@ -10,15 +10,17 @@
 // Helpers
 @import "helpers/variables";
 @import "helpers/mixins";
-//@import "helpers/placeholders";
-
-// Base
-@import "base/base";
+@import "helpers/placeholders";
+@import "helpers/animation";
+@import "helpers/function";
 
 // Layouts
 @import "layouts/grid";
 
-// components
-@import "components/header";
+// Base
+@import "base/base";
+
+// Components
+@import "components/btn";
 // Pages
 @import "pages/main";

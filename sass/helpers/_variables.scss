@@ -1,4 +1,8 @@
 //COLORS:
+$base: #fff;
+$primary: #496ee8;
+$secondary: #20c77f;
+$tertiary: #e84949;
 $original: #55c57a;
 $light: #7ed56f;
 $dark: #28b485;
@@ -15,3 +19,8 @@ $breakpoints: (
   "desktop": 1248px,
   "desktop-wide": 1440px
 );
+
+//Setup
+
+//button
+$btn-color: $base;
