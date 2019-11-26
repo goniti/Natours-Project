@@ -1,7 +1,7 @@
 @function btn-dynamically-text-color($color) {
   @if (lightness($color) > 60) {
-    @return #777; // Lighter backgorund, return dark color
+    @return $darkgrey; // Lighter backgorund, return dark color
   } @else {
-    @return #ffffff; // Darker background, return light color
+    @return $white; // Darker background, return light color
   }
 }

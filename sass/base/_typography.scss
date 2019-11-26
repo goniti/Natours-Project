@@ -1,0 +1,16 @@
+body {
+  @include font(1rem, $darkgrey, 400, 1.7);
+}
+
+.header {
+  &__text {
+    color: $white;
+    text-transform: uppercase;
+  }
+  &__title {
+    @include font(3.75rem, null, 400, null, 2.1875rem);
+  }
+  &__subtitle {
+    @include font(1.25rem, null, 700, null, 1.0875rem);
+  }
+}

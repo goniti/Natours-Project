@@ -1,0 +1,24 @@
+.main__logo {
+  height: 2.1875rem;
+}
+.header {
+  height: 95vh;
+  background-image: linear-gradient(to right bottom, rgba($light, 0.8), rgba($dark, 0.8)), url(../img/hero.jpg);
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+
+  &__hero {
+    height: 100%;
+  }
+  &__text {
+    backface-visibility: hidden;
+    margin-bottom: 3.75rem;
+  }
+  &__title {
+    @include animate(moveInLeft, 1s, 0, ease-out, none);
+  }
+  &__subtitle {
+    @include animate(moveInRight, 1s, 0, ease-out, none);
+  }
+}

@@ -1,5 +1,5 @@
 //COLORS:
-$base: #fff;
+$white: #fff;
 $primary: #496ee8;
 $secondary: #20c77f;
 $tertiary: #e84949;
@@ -23,4 +23,7 @@ $breakpoints: (
 //Setup
 
 //button
-$btn-color: $base;
+$btn-color-white: $white;
+$btn-border-rounded: 3.125rem;
+$btn-border-roundedEdge: 1.25rem;
+$none: none;

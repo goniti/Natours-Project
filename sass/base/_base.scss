@@ -1,4 +1,13 @@
+*,
+*:before,
+*:after {
+  @include box-sizing(inherit);
+}
+
+html {
+  @include box-sizing(border-box);
+}
+
 body {
-  @include font(1rem, $darkgrey, 400, 1.7);
-  padding: 30px;
+  padding: 1.875rem;
 }

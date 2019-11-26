@@ -146,64 +146,55 @@ $prefixes: ("-moz-", "-webkit-", "-o-", "-ms-", "");
   @-ms-keyframes #{$name} {
     @content;
   }
+  @-o-keyframes #{$name} {
+    @content;
+  }
   @keyframes #{$name} {
     @content;
   }
 }
 // Animate
-@mixin animate($name, $duration, $iteration, $tf) {
-  -webkit-animation-duration: $duration;
-  -moz-animation-duration: $duration;
-  -o-animation-duration: $duration;
-  animation-duration: $duration;
-  -webkit-animation-iteration-count: $iteration;
-  -moz-animation-iteration-count: $iteration;
-  -o-animation-iteration-count: $iteration;
-  animation-iteration-count: $iteration;
-  -webkit-animation-name: $name;
-  -moz-animation-name: $name;
-  -o-animation-name: $name;
-  animation-name: $name;
-  -webkit-animation-timing-function: $tf;
-  -moz-animation-timing-function: $tf;
-  -o-animation-timing-function: $tf;
-  animation-timing-function: $tf;
+@mixin animate($name, $duration, $delay, $function, $mode) {
+  @include animation-name($name);
+  @include animation-duration($duration);
+  @include animation-delay($delay);
+  @include animation-timing-function($function);
+  @include animation-fill-mode($mode);
 }
 
 // BUTTONS
-@mixin button($name, $bg) {
+@mixin button($name, $bg, $radius) {
   .btn--#{$name} {
     color: btn-dynamically-text-color($bg);
     background-color: $bg;
+    @include border-radius($radius);
     @include button-hover($bg);
   }
 }
-@mixin button-animated($name, $bg) {
+@mixin button-pulse($name, $bg, $radius) {
   .btn {
     &:hover {
       &::after {
-        transform: scale(1.5);
-        opacity: 0;
+        @include scale(1.4, 1.6);
+        @include opacity(0);
       }
     }
     &:link,
     &:visited {
       position: relative;
     }
-    &--animated-#{$name} {
+    &--pulse-#{$name} {
       @extend .btn--#{$name};
       &::after {
         content: "";
+        background-color: $bg;
         height: 100%;
         width: 100%;
-        border-radius: 50px;
-        background-color: $bg;
-        display: inline-block;
-        position: absolute;
-        top: 0;
-        left: 0;
         z-index: -1;
-        @include transition(all 0.25s ease);
+        @include border-radius($radius);
+        @include flexbox;
+        @include position-absolute(0, 0);
+        @include transition(all 0.15s ease);
       }
     }
   }

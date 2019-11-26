@@ -1,47 +1,42 @@
 .btn {
-  border-radius: 50px;
   border: none;
   cursor: pointer;
   padding: 0.938em 2.5em;
+  text-transform: uppercase;
+  text-decoration: none;
   @include transition(all 0.1s ease-in-out);
 
-  &.is-disabled {
-    background-color: #ccc;
-    cursor: not-allowed;
-  }
-
   &:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    @include translateY(-3px);
+    @include box-shadow(0 0.625rem 1.25rem rgba(0, 0, 0, 0.3));
   }
   &:active {
-    transform: translateY(-1px);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    @include translateY(-1px);
+    @include box-shadow(0 0.3125rem 0.625rem rgba(0, 0, 0, 0.2));
   }
-  &:link,
-  &:visited {
-    text-transform: uppercase;
-    text-decoration: none;
+
+  &--animation {
+    @include animate(moveInBottom, 0.5s, 0.75s, ease-out, backwards);
   }
 }
 
 // --- button: sizes -----------------------------------------------------------
 
-@include button-size("small", 12px);
-@include button-size("large", 20px);
+@include button-size("small", 0.75rem);
+@include button-size("large", 1.25rem);
 // class= "btn--large"
 
 // --- button: variants --------------------------------------------------------
 
-@include button("primary", $btn-color);
-//class= "btn--primary "
+@include button("white", $btn-color-white, $btn-border-rounded);
+//class= "btn--white "
 
-// --- button: animated --------------------------------------------------------
+// --- button: effect Pulse --------------------------------------------------------
 
-@include button-animated("primary", $btn-color);
-// class= "btn--animated-primary"
+@include button-pulse("white", $btn-color-white, $btn-border-rounded);
+// class= "btn--pulse-white"
 
 // --- button: bordered --------------------------------------------------------
 
-@include button-bordered("primary", $btn-color);
-// class= "btn--bordered-primary"
+@include button-bordered("white", $btn-color-white);
+// class= "btn--bordered-white"
