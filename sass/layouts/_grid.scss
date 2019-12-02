@@ -17,30 +17,40 @@
 }
 // About Page
 .section__title {
-  display: flex;
-  justify-content: center;
+  @include flexbox;
+  @include justify-content(center);
 }
 
 // Grid System
 
 //--Row
 .grid__row {
-  display: flex;
-  flex-wrap: wrap;
+  @include flexbox;
+  @include flex-wrap(wrap);
 }
 
 //--Column
 [class^="grid__col"] {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+  @include flexbox;
+  @include justify-content(center);
+  @include flex-direction(column);
   margin-bottom: $grid-gutter-vertical;
 
   &:not(:last-child) {
     margin-right: $grid-gutter-horizontal;
   }
 }
-
+.grid__col {
+  &--text-right {
+    @include align-items(flex-end);
+  }
+  &--text-left {
+    @include align-items(flex-start);
+  }
+  &--text-centered {
+    @include align-items(center);
+  }
+}
 @for $i from 1 through 12 {
   .grid__col--#{$i} {
     flex-basis: calc(100% / #{$grid-number-col} * #{$i});

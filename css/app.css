@@ -109,20 +109,46 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* line 19, ../sass/layouts/_grid.scss */
 .section__title {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
   justify-content: center;
+  -ms-flex-pack: center;
 }
 
 /* line 27, ../sass/layouts/_grid.scss */
 .grid__row {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
 /* line 33, ../sass/layouts/_grid.scss */
 [class^="grid__col"] {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
   justify-content: center;
+  -ms-flex-pack: center;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
   margin-bottom: 2rem;
 }
@@ -131,134 +157,156 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin-right: 1rem;
 }
 
-/* line 45, ../sass/layouts/_grid.scss */
+/* line 44, ../sass/layouts/_grid.scss */
+.grid__col--text-right {
+  -webkit-align-items: flex-end;
+  -moz-align-items: flex-end;
+  -ms-align-items: flex-end;
+  align-items: flex-end;
+}
+/* line 47, ../sass/layouts/_grid.scss */
+.grid__col--text-left {
+  -webkit-align-items: flex-start;
+  -moz-align-items: flex-start;
+  -ms-align-items: flex-start;
+  align-items: flex-start;
+}
+/* line 50, ../sass/layouts/_grid.scss */
+.grid__col--text-centered {
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+}
+
+/* line 55, ../sass/layouts/_grid.scss */
 .grid__col--1 {
   flex-basis: calc(100% / 12 * 1);
   flex: 1 0 6%;
 }
 
-/* line 49, ../sass/layouts/_grid.scss */
+/* line 59, ../sass/layouts/_grid.scss */
 .col__fixed--width-1 {
   flex: 0 0 calc(100% / 12 * 1);
 }
 
-/* line 45, ../sass/layouts/_grid.scss */
+/* line 55, ../sass/layouts/_grid.scss */
 .grid__col--2 {
   flex-basis: calc(100% / 12 * 2);
   flex: 1 0 6%;
 }
 
-/* line 49, ../sass/layouts/_grid.scss */
+/* line 59, ../sass/layouts/_grid.scss */
 .col__fixed--width-2 {
   flex: 0 0 calc(100% / 12 * 2);
 }
 
-/* line 45, ../sass/layouts/_grid.scss */
+/* line 55, ../sass/layouts/_grid.scss */
 .grid__col--3 {
   flex-basis: calc(100% / 12 * 3);
   flex: 1 0 6%;
 }
 
-/* line 49, ../sass/layouts/_grid.scss */
+/* line 59, ../sass/layouts/_grid.scss */
 .col__fixed--width-3 {
   flex: 0 0 calc(100% / 12 * 3);
 }
 
-/* line 45, ../sass/layouts/_grid.scss */
+/* line 55, ../sass/layouts/_grid.scss */
 .grid__col--4 {
   flex-basis: calc(100% / 12 * 4);
   flex: 1 0 6%;
 }
 
-/* line 49, ../sass/layouts/_grid.scss */
+/* line 59, ../sass/layouts/_grid.scss */
 .col__fixed--width-4 {
   flex: 0 0 calc(100% / 12 * 4);
 }
 
-/* line 45, ../sass/layouts/_grid.scss */
+/* line 55, ../sass/layouts/_grid.scss */
 .grid__col--5 {
   flex-basis: calc(100% / 12 * 5);
   flex: 1 0 6%;
 }
 
-/* line 49, ../sass/layouts/_grid.scss */
+/* line 59, ../sass/layouts/_grid.scss */
 .col__fixed--width-5 {
   flex: 0 0 calc(100% / 12 * 5);
 }
 
-/* line 45, ../sass/layouts/_grid.scss */
+/* line 55, ../sass/layouts/_grid.scss */
 .grid__col--6 {
   flex-basis: calc(100% / 12 * 6);
   flex: 1 0 6%;
 }
 
-/* line 49, ../sass/layouts/_grid.scss */
+/* line 59, ../sass/layouts/_grid.scss */
 .col__fixed--width-6 {
   flex: 0 0 calc(100% / 12 * 6);
 }
 
-/* line 45, ../sass/layouts/_grid.scss */
+/* line 55, ../sass/layouts/_grid.scss */
 .grid__col--7 {
   flex-basis: calc(100% / 12 * 7);
   flex: 1 0 6%;
 }
 
-/* line 49, ../sass/layouts/_grid.scss */
+/* line 59, ../sass/layouts/_grid.scss */
 .col__fixed--width-7 {
   flex: 0 0 calc(100% / 12 * 7);
 }
 
-/* line 45, ../sass/layouts/_grid.scss */
+/* line 55, ../sass/layouts/_grid.scss */
 .grid__col--8 {
   flex-basis: calc(100% / 12 * 8);
   flex: 1 0 6%;
 }
 
-/* line 49, ../sass/layouts/_grid.scss */
+/* line 59, ../sass/layouts/_grid.scss */
 .col__fixed--width-8 {
   flex: 0 0 calc(100% / 12 * 8);
 }
 
-/* line 45, ../sass/layouts/_grid.scss */
+/* line 55, ../sass/layouts/_grid.scss */
 .grid__col--9 {
   flex-basis: calc(100% / 12 * 9);
   flex: 1 0 6%;
 }
 
-/* line 49, ../sass/layouts/_grid.scss */
+/* line 59, ../sass/layouts/_grid.scss */
 .col__fixed--width-9 {
   flex: 0 0 calc(100% / 12 * 9);
 }
 
-/* line 45, ../sass/layouts/_grid.scss */
+/* line 55, ../sass/layouts/_grid.scss */
 .grid__col--10 {
   flex-basis: calc(100% / 12 * 10);
   flex: 1 0 6%;
 }
 
-/* line 49, ../sass/layouts/_grid.scss */
+/* line 59, ../sass/layouts/_grid.scss */
 .col__fixed--width-10 {
   flex: 0 0 calc(100% / 12 * 10);
 }
 
-/* line 45, ../sass/layouts/_grid.scss */
+/* line 55, ../sass/layouts/_grid.scss */
 .grid__col--11 {
   flex-basis: calc(100% / 12 * 11);
   flex: 1 0 6%;
 }
 
-/* line 49, ../sass/layouts/_grid.scss */
+/* line 59, ../sass/layouts/_grid.scss */
 .col__fixed--width-11 {
   flex: 0 0 calc(100% / 12 * 11);
 }
 
-/* line 45, ../sass/layouts/_grid.scss */
+/* line 55, ../sass/layouts/_grid.scss */
 .grid__col--12 {
   flex-basis: calc(100% / 12 * 12);
   flex: 1 0 6%;
 }
 
-/* line 49, ../sass/layouts/_grid.scss */
+/* line 59, ../sass/layouts/_grid.scss */
 .col__fixed--width-12 {
   flex: 0 0 calc(100% / 12 * 12);
 }
@@ -663,8 +711,9 @@ html {
 }
 
 /* line 34, ../sass/base/_typography.scss */
-.grid__title {
-  margin-bottom: 1.5rem;
+.about__title {
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 @media only screen and (max-width: 559px) {
@@ -691,15 +740,13 @@ html {
 .btn {
   border: none;
   cursor: pointer;
-  padding: 0.938em 2.5em;
-  text-transform: uppercase;
   text-decoration: none;
   -moz-transition: all 0.1s ease-in-out;
   -o-transition: all 0.1s ease-in-out;
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
 }
-/* line 9, ../sass/components/_btn.scss */
+/* line 7, ../sass/components/_btn.scss */
 .btn:hover {
   -moz-transform: translateY(-3px);
   -ms-transform: translateY(-3px);
@@ -709,7 +756,7 @@ html {
   -webkit-box-shadow: 0 0.625rem 1.25rem rgba(0, 0, 0, 0.3);
   box-shadow: 0 0.625rem 1.25rem rgba(0, 0, 0, 0.3);
 }
-/* line 13, ../sass/components/_btn.scss */
+/* line 11, ../sass/components/_btn.scss */
 .btn:active {
   -moz-transform: translateY(-1px);
   -ms-transform: translateY(-1px);
@@ -719,7 +766,7 @@ html {
   -webkit-box-shadow: 0 0.3125rem 0.625rem rgba(0, 0, 0, 0.2);
   box-shadow: 0 0.3125rem 0.625rem rgba(0, 0, 0, 0.2);
 }
-/* line 18, ../sass/components/_btn.scss */
+/* line 16, ../sass/components/_btn.scss */
 .btn--animation {
   -moz-animation-name: moveInBottom;
   -webkit-animation-name: moveInBottom;
@@ -738,30 +785,32 @@ html {
   animation-fill-mode: backwards;
 }
 
-/* line 231, ../sass/helpers/_mixins.scss */
+/* line 233, ../sass/helpers/_mixins.scss */
 .btn--small {
   font-size: 0.75rem;
 }
 
-/* line 231, ../sass/helpers/_mixins.scss */
+/* line 233, ../sass/helpers/_mixins.scss */
 .btn--large {
   font-size: 1.25rem;
 }
 
 /* line 188, ../sass/helpers/_mixins.scss */
 .btn--white, .btn--pulse-white {
+  padding: 0.938em 2.5em;
+  text-transform: uppercase;
   color: #777;
   background-color: #fff;
   -moz-border-radius: 3.125rem;
   -webkit-border-radius: 3.125rem;
   border-radius: 3.125rem;
 }
-/* line 225, ../sass/helpers/_mixins.scss */
+/* line 227, ../sass/helpers/_mixins.scss */
 .btn--white:hover, .btn--pulse-white:hover {
   background-color: white;
 }
 
-/* line 198, ../sass/helpers/_mixins.scss */
+/* line 200, ../sass/helpers/_mixins.scss */
 .btn:hover::after {
   -moz-transform: scale(1.4, 1.6);
   -ms-transform: scale(1.4, 1.6);
@@ -770,11 +819,11 @@ html {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
 }
-/* line 203, ../sass/helpers/_mixins.scss */
+/* line 205, ../sass/helpers/_mixins.scss */
 .btn:link, .btn:visited {
   position: relative;
 }
-/* line 209, ../sass/helpers/_mixins.scss */
+/* line 211, ../sass/helpers/_mixins.scss */
 .btn--pulse-white::after {
   content: "";
   background-color: #fff;
@@ -798,36 +847,53 @@ html {
   transition: all 0.15s ease;
 }
 
-/* line 237, ../sass/helpers/_mixins.scss */
+/* line 239, ../sass/helpers/_mixins.scss */
 .btn--bordered-white {
   background: transparent;
   border: 1px solid #fff;
   color: #fff;
+  padding: 0.938em 2.5em;
+  text-transform: uppercase;
 }
-/* line 242, ../sass/helpers/_mixins.scss */
+/* line 245, ../sass/helpers/_mixins.scss */
 .btn--bordered-white:hover {
   background: transparent;
   color: #e6e6e6;
   border-color: #e6e6e6;
 }
 
+/* line 253, ../sass/helpers/_mixins.scss */
+.btn--text-green {
+  background: transparent;
+  border-bottom: 1px solid #55c57a;
+  color: #55c57a;
+  padding: 4px;
+  font-weight: 600;
+  margin-top: 1.5rem;
+}
+/* line 260, ../sass/helpers/_mixins.scss */
+.btn--text-green:hover {
+  color: #fff;
+  background-color: #55c57a;
+}
+
 /* line 1, ../sass/components/_title.scss */
 .section__title {
   margin-bottom: 8rem;
-  background-color: #28b485;
+  background-color: #28b586;
   /* Fallback Color */
-  background-image: -webkit-gradient(linear, to right, from(#7ed56f), to(#28b485));
+  background-image: -webkit-gradient(linear, to right, from(#85d177), to(#28b586));
   /* Saf4+, Chrome */
-  background-image: -webkit-linear-gradient(to right, #7ed56f, #28b485);
+  background-image: -webkit-linear-gradient(to right, #85d177, #28b586);
   /* Chrome 10+, Saf5.1+, iOS 5+ */
-  background-image: -moz-linear-gradient(to right, #7ed56f, #28b485);
+  background-image: -moz-linear-gradient(to right, #85d177, #28b586);
   /* FF3.6 */
-  background-image: -ms-linear-gradient(to right, #7ed56f, #28b485);
+  background-image: -ms-linear-gradient(to right, #85d177, #28b586);
   /* IE10 */
-  background-image: -o-linear-gradient(to right, #7ed56f, #28b485);
+  background-image: -o-linear-gradient(to right, #85d177, #28b586);
   /* Opera 11.10+ */
-  background-image: linear-gradient(to right, #7ed56f, #28b485);
-  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=$angle,StartColorStr='#7ed56f', EndColorStr='#28b485');
+  background-image: linear-gradient(to right, #85d177, #28b586);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=$angle,StartColorStr='#85d177', EndColorStr='#28b586');
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -ms-background-clip: text;
@@ -855,21 +921,21 @@ html {
 /* line 4, ../sass/pages/_header.scss */
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg);
+  background-image: linear-gradient(to right bottom, rgba(133, 209, 119, 0.8), rgba(40, 181, 134, 0.8)), url(../img/hero.jpg);
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
-/* line 12, ../sass/pages/_header.scss */
+/* line 16, ../sass/pages/_header.scss */
 .header__hero {
   height: 100%;
 }
-/* line 15, ../sass/pages/_header.scss */
+/* line 19, ../sass/pages/_header.scss */
 .header__text {
   backface-visibility: hidden;
   margin-bottom: 3.75rem;
 }
-/* line 19, ../sass/pages/_header.scss */
+/* line 23, ../sass/pages/_header.scss */
 .header__title {
   -moz-animation-name: moveInLeft;
   -webkit-animation-name: moveInLeft;
@@ -887,7 +953,7 @@ html {
   -webkit-animation-fill-mode: none;
   animation-fill-mode: none;
 }
-/* line 22, ../sass/pages/_header.scss */
+/* line 26, ../sass/pages/_header.scss */
 .header__subtitle {
   -moz-animation-name: moveInRight;
   -webkit-animation-name: moveInRight;
@@ -907,10 +973,23 @@ html {
 }
 
 /* line 1, ../sass/pages/_about.scss */
-.section__about {
+.about {
   background-color: #f7f7f7;
   padding: 25rem 0;
   margin-top: -20vh;
+}
+/* line 5, ../sass/pages/_about.scss */
+.about__title {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+/* line 9, ../sass/pages/_about.scss */
+.about__paragraph {
+  margin: 1.5rem 0;
+}
+/* line 12, ../sass/pages/_about.scss */
+.about__item {
+  width: 60%;
 }
 
 /*# sourceMappingURL=app.css.map */
