@@ -1,0 +1,29 @@
+[class^="grid__col"] {
+  @include media("phablet", "max") {
+    &:last-child {
+      margin-right: $grid-gutter-horizontal;
+    }
+  }
+}
+.grid__col {
+  &--5,
+  &--4,
+  &--3,
+  &--2,
+  &--1 {
+    @include media("phablet", "max") {
+      flex-basis: 50%;
+    }
+  }
+  &--6,
+  &--7,
+  &--8,
+  &--9,
+  &--10,
+  &--11,
+  &--12 {
+    @include media("phablet", "max") {
+      flex-basis: 98%;
+    }
+  }
+}

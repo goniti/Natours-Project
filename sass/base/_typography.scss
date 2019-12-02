@@ -1,10 +1,14 @@
 body {
-  @include font(1rem, $darkgrey, 400, 1.7);
+  @include font(1rem, $color-grey-dark, 400, 1.7);
+}
+
+html {
+  font-size: 62.5%;
 }
 
 .header {
   &__text {
-    color: $white;
+    color: $color-white;
     text-transform: uppercase;
   }
   &__title {
@@ -13,4 +17,16 @@ body {
   &__subtitle {
     @include font(1.25rem, null, 700, null, 1.0875rem);
   }
+}
+
+.section__title {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  color: $color-white;
+}
+
+[class^="grid__col"] {
+  font-size: 1.6rem;
 }

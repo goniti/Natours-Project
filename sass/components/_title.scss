@@ -1,0 +1,12 @@
+.section__title {
+  margin-bottom: 8rem;
+  @include linear-gradient(to right, $color-original-light, $color-original-dark);
+  @include background-clip(text);
+  -webkit-text-fill-color: transparent;
+  @include transition(all 0.2s);
+
+  &:hover {
+    @include transform(skewY(2deg) skewX(15deg));
+    @include text-shadow(0.5rem 1rem 2rem rgba($color-black, 0.2));
+  }
+}

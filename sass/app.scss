@@ -21,8 +21,12 @@
 @import "base/base";
 @import "base/animation";
 @import "base/typography";
+@import "base/media";
 
 // Components
 @import "components/btn";
+@import "components/title";
+
 // Pages
-@import "pages/home";
+@import "pages/header";
+@import "pages/about";

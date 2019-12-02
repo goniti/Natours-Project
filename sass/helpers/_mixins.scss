@@ -1,34 +1,23 @@
-// Edit font
-@mixin font($size: false, $colour: false, $weight: false, $lh: false, $ls: false) {
-  font-family: "Lato", Helvetica, Arial, sans-serif;
-  @if $size {
-    font-size: $size;
+// VENDOR Prefix
+
+// keyframes mixin
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content;
   }
-  @if $colour {
-    color: $colour;
+  @-moz-keyframes #{$name} {
+    @content;
   }
-  @if $weight {
-    font-weight: $weight;
+  @-ms-keyframes #{$name} {
+    @content;
   }
-  @if $lh {
-    line-height: $lh;
+  @-o-keyframes #{$name} {
+    @content;
   }
-  @if $ls {
-    letter-spacing: $ls;
+  @keyframes #{$name} {
+    @content;
   }
 }
-
-// Selection mixin
-$prefixes: ("-moz-", "-webkit-", "-o-", "-ms-", "");
-@mixin selection($color, $background) {
-  @each $prefix in $prefixes {
-    ::#{$prefix}selection {
-      color: $color;
-      background: $background;
-    }
-  }
-}
-
 // Custom scrollbar mixin
 @mixin scrollbars($size, $foreground-color, $background-color: mix($foreground-color, white, 25%)) {
   ::-webkit-scrollbar {
@@ -68,13 +57,15 @@ $prefixes: ("-moz-", "-webkit-", "-o-", "-ms-", "");
   }
 }
 
-//position absolute mixin
-@mixin position-absolute($top: null, $right: null, $bottom: null, $left: null) {
-  position: absolute;
-  top: $top;
-  left: $left;
-  right: $right;
-  bottom: $bottom;
+// Selection mixin
+$prefixes: ("-moz-", "-webkit-", "-o-", "-ms-", "");
+@mixin selection($color, $background) {
+  @each $prefix in $prefixes {
+    ::#{$prefix}selection {
+      color: $color;
+      background: $background;
+    }
+  }
 }
 
 // Flexbox
@@ -116,11 +107,59 @@ $prefixes: ("-moz-", "-webkit-", "-o-", "-ms-", "");
   flex-wrap: $wrap;
 }
 
+// Linear-gradient
+@mixin linear-gradient($angle, $gradient1, $gradient2) {
+  background-color: $gradient2; /* Fallback Color */
+  background-image: -webkit-gradient(linear, $angle, from($gradient1), to($gradient2)); /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient($angle, $gradient1, $gradient2); /* Chrome 10+, Saf5.1+, iOS 5+ */
+  background-image: -moz-linear-gradient($angle, $gradient1, $gradient2); /* FF3.6 */
+  background-image: -ms-linear-gradient($angle, $gradient1, $gradient2); /* IE10 */
+  background-image: -o-linear-gradient($angle, $gradient1, $gradient2); /* Opera 11.10+ */
+  background-image: linear-gradient($angle, $gradient1, $gradient2);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=$angle,StartColorStr='#{$gradient1}', EndColorStr='#{$gradient2}');
+}
+// Background clip
+@mixin background-clip($parameters) {
+  -webkit-background-clip: $parameters;
+  -moz-background-clip: $parameters;
+  -ms-background-clip: $parameters;
+  background-clip: $parameters;
+}
+
 // Grayscale
 @mixin grayscale($value) {
   -webkit-filter: #{"grayscale(#{$value})"};
   -moz-filter: #{"grayscale(#{$value})"};
   filter: #{"grayscale(#{$value})"};
+}
+
+// Edit font
+@mixin font($size: false, $colour: false, $weight: false, $lh: false, $ls: false) {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  @if $size {
+    font-size: $size;
+  }
+  @if $colour {
+    color: $colour;
+  }
+  @if $weight {
+    font-weight: $weight;
+  }
+  @if $lh {
+    line-height: $lh;
+  }
+  @if $ls {
+    letter-spacing: $ls;
+  }
+}
+
+//position absolute mixin
+@mixin position-absolute($top: null, $right: null, $bottom: null, $left: null) {
+  position: absolute;
+  top: $top;
+  left: $left;
+  right: $right;
+  bottom: $bottom;
 }
 
 @mixin media($width, $type: min) {
@@ -135,24 +174,6 @@ $prefixes: ("-moz-", "-webkit-", "-o-", "-ms-", "");
   }
 }
 
-// keyframes mixin
-@mixin keyframes($name) {
-  @-webkit-keyframes #{$name} {
-    @content;
-  }
-  @-moz-keyframes #{$name} {
-    @content;
-  }
-  @-ms-keyframes #{$name} {
-    @content;
-  }
-  @-o-keyframes #{$name} {
-    @content;
-  }
-  @keyframes #{$name} {
-    @content;
-  }
-}
 // Animate
 @mixin animate($name, $duration, $delay, $function, $mode) {
   @include animation-name($name);
