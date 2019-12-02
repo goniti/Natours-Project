@@ -662,6 +662,11 @@ html {
   font-size: 1.6rem;
 }
 
+/* line 34, ../sass/base/_typography.scss */
+.grid__title {
+  margin-bottom: 1.5rem;
+}
+
 @media only screen and (max-width: 559px) {
   /* line 3, ../sass/base/_media.scss */
   [class^="grid__col"]:last-child {
