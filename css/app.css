@@ -141,37 +141,32 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  -webkit-justify-content: center;
-  -moz-justify-content: center;
-  -ms-justify-content: center;
-  justify-content: center;
-  -ms-flex-pack: center;
   -webkit-flex-direction: column;
   -moz-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
   margin-bottom: 2rem;
 }
-/* line 39, ../sass/layouts/_grid.scss */
+/* line 38, ../sass/layouts/_grid.scss */
 [class^="grid__col"]:not(:last-child) {
-  margin-right: 1rem;
+  margin-right: 7rem;
 }
 
-/* line 44, ../sass/layouts/_grid.scss */
+/* line 43, ../sass/layouts/_grid.scss */
 .grid__col--text-right {
   -webkit-align-items: flex-end;
   -moz-align-items: flex-end;
   -ms-align-items: flex-end;
   align-items: flex-end;
 }
-/* line 47, ../sass/layouts/_grid.scss */
+/* line 46, ../sass/layouts/_grid.scss */
 .grid__col--text-left {
   -webkit-align-items: flex-start;
   -moz-align-items: flex-start;
   -ms-align-items: flex-start;
   align-items: flex-start;
 }
-/* line 50, ../sass/layouts/_grid.scss */
+/* line 49, ../sass/layouts/_grid.scss */
 .grid__col--text-centered {
   -webkit-align-items: center;
   -moz-align-items: center;
@@ -179,134 +174,134 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   align-items: center;
 }
 
-/* line 55, ../sass/layouts/_grid.scss */
+/* line 54, ../sass/layouts/_grid.scss */
 .grid__col--1 {
   flex-basis: calc(100% / 12 * 1);
   flex: 1 0 6%;
 }
 
-/* line 59, ../sass/layouts/_grid.scss */
+/* line 58, ../sass/layouts/_grid.scss */
 .col__fixed--width-1 {
   flex: 0 0 calc(100% / 12 * 1);
 }
 
-/* line 55, ../sass/layouts/_grid.scss */
+/* line 54, ../sass/layouts/_grid.scss */
 .grid__col--2 {
   flex-basis: calc(100% / 12 * 2);
   flex: 1 0 6%;
 }
 
-/* line 59, ../sass/layouts/_grid.scss */
+/* line 58, ../sass/layouts/_grid.scss */
 .col__fixed--width-2 {
   flex: 0 0 calc(100% / 12 * 2);
 }
 
-/* line 55, ../sass/layouts/_grid.scss */
+/* line 54, ../sass/layouts/_grid.scss */
 .grid__col--3 {
   flex-basis: calc(100% / 12 * 3);
   flex: 1 0 6%;
 }
 
-/* line 59, ../sass/layouts/_grid.scss */
+/* line 58, ../sass/layouts/_grid.scss */
 .col__fixed--width-3 {
   flex: 0 0 calc(100% / 12 * 3);
 }
 
-/* line 55, ../sass/layouts/_grid.scss */
+/* line 54, ../sass/layouts/_grid.scss */
 .grid__col--4 {
   flex-basis: calc(100% / 12 * 4);
   flex: 1 0 6%;
 }
 
-/* line 59, ../sass/layouts/_grid.scss */
+/* line 58, ../sass/layouts/_grid.scss */
 .col__fixed--width-4 {
   flex: 0 0 calc(100% / 12 * 4);
 }
 
-/* line 55, ../sass/layouts/_grid.scss */
+/* line 54, ../sass/layouts/_grid.scss */
 .grid__col--5 {
   flex-basis: calc(100% / 12 * 5);
   flex: 1 0 6%;
 }
 
-/* line 59, ../sass/layouts/_grid.scss */
+/* line 58, ../sass/layouts/_grid.scss */
 .col__fixed--width-5 {
   flex: 0 0 calc(100% / 12 * 5);
 }
 
-/* line 55, ../sass/layouts/_grid.scss */
+/* line 54, ../sass/layouts/_grid.scss */
 .grid__col--6 {
   flex-basis: calc(100% / 12 * 6);
   flex: 1 0 6%;
 }
 
-/* line 59, ../sass/layouts/_grid.scss */
+/* line 58, ../sass/layouts/_grid.scss */
 .col__fixed--width-6 {
   flex: 0 0 calc(100% / 12 * 6);
 }
 
-/* line 55, ../sass/layouts/_grid.scss */
+/* line 54, ../sass/layouts/_grid.scss */
 .grid__col--7 {
   flex-basis: calc(100% / 12 * 7);
   flex: 1 0 6%;
 }
 
-/* line 59, ../sass/layouts/_grid.scss */
+/* line 58, ../sass/layouts/_grid.scss */
 .col__fixed--width-7 {
   flex: 0 0 calc(100% / 12 * 7);
 }
 
-/* line 55, ../sass/layouts/_grid.scss */
+/* line 54, ../sass/layouts/_grid.scss */
 .grid__col--8 {
   flex-basis: calc(100% / 12 * 8);
   flex: 1 0 6%;
 }
 
-/* line 59, ../sass/layouts/_grid.scss */
+/* line 58, ../sass/layouts/_grid.scss */
 .col__fixed--width-8 {
   flex: 0 0 calc(100% / 12 * 8);
 }
 
-/* line 55, ../sass/layouts/_grid.scss */
+/* line 54, ../sass/layouts/_grid.scss */
 .grid__col--9 {
   flex-basis: calc(100% / 12 * 9);
   flex: 1 0 6%;
 }
 
-/* line 59, ../sass/layouts/_grid.scss */
+/* line 58, ../sass/layouts/_grid.scss */
 .col__fixed--width-9 {
   flex: 0 0 calc(100% / 12 * 9);
 }
 
-/* line 55, ../sass/layouts/_grid.scss */
+/* line 54, ../sass/layouts/_grid.scss */
 .grid__col--10 {
   flex-basis: calc(100% / 12 * 10);
   flex: 1 0 6%;
 }
 
-/* line 59, ../sass/layouts/_grid.scss */
+/* line 58, ../sass/layouts/_grid.scss */
 .col__fixed--width-10 {
   flex: 0 0 calc(100% / 12 * 10);
 }
 
-/* line 55, ../sass/layouts/_grid.scss */
+/* line 54, ../sass/layouts/_grid.scss */
 .grid__col--11 {
   flex-basis: calc(100% / 12 * 11);
   flex: 1 0 6%;
 }
 
-/* line 59, ../sass/layouts/_grid.scss */
+/* line 58, ../sass/layouts/_grid.scss */
 .col__fixed--width-11 {
   flex: 0 0 calc(100% / 12 * 11);
 }
 
-/* line 55, ../sass/layouts/_grid.scss */
+/* line 54, ../sass/layouts/_grid.scss */
 .grid__col--12 {
   flex-basis: calc(100% / 12 * 12);
   flex: 1 0 6%;
 }
 
-/* line 59, ../sass/layouts/_grid.scss */
+/* line 58, ../sass/layouts/_grid.scss */
 .col__fixed--width-12 {
   flex: 0 0 calc(100% / 12 * 12);
 }
@@ -719,7 +714,7 @@ html {
 @media only screen and (max-width: 559px) {
   /* line 3, ../sass/base/_media.scss */
   [class^="grid__col"]:last-child {
-    margin-right: 1rem;
+    margin-right: 7rem;
   }
 }
 
@@ -865,8 +860,8 @@ html {
 /* line 253, ../sass/helpers/_mixins.scss */
 .btn--text-green {
   background: transparent;
-  border-bottom: 1px solid #55c57a;
-  color: #55c57a;
+  border-bottom: 1px solid #54c47a;
+  color: #54c47a;
   padding: 4px;
   font-weight: 600;
   margin-top: 1.5rem;
@@ -874,26 +869,26 @@ html {
 /* line 260, ../sass/helpers/_mixins.scss */
 .btn--text-green:hover {
   color: #fff;
-  background-color: #55c57a;
+  background-color: #54c47a;
 }
 
 /* line 1, ../sass/components/_title.scss */
 .section__title {
   margin-bottom: 8rem;
-  background-color: #28b586;
+  background-color: #27b485;
   /* Fallback Color */
-  background-image: -webkit-gradient(linear, to right, from(#85d177), to(#28b586));
+  background-image: -webkit-gradient(linear, to right, from(#84d076), to(#27b485));
   /* Saf4+, Chrome */
-  background-image: -webkit-linear-gradient(to right, #85d177, #28b586);
+  background-image: -webkit-linear-gradient(to right, #84d076, #27b485);
   /* Chrome 10+, Saf5.1+, iOS 5+ */
-  background-image: -moz-linear-gradient(to right, #85d177, #28b586);
+  background-image: -moz-linear-gradient(to right, #84d076, #27b485);
   /* FF3.6 */
-  background-image: -ms-linear-gradient(to right, #85d177, #28b586);
+  background-image: -ms-linear-gradient(to right, #84d076, #27b485);
   /* IE10 */
-  background-image: -o-linear-gradient(to right, #85d177, #28b586);
+  background-image: -o-linear-gradient(to right, #84d076, #27b485);
   /* Opera 11.10+ */
-  background-image: linear-gradient(to right, #85d177, #28b586);
-  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=$angle,StartColorStr='#85d177', EndColorStr='#28b586');
+  background-image: linear-gradient(to right, #84d076, #27b485);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=$angle,StartColorStr='#84d076', EndColorStr='#27b485');
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -ms-background-clip: text;
@@ -913,6 +908,34 @@ html {
   text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
+/* line 1, ../sass/components/_composition.scss */
+.composition {
+  position: relative;
+  width: 65%;
+}
+/* line 4, ../sass/components/_composition.scss */
+.composition__photo {
+  width: 55%;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+  border-radius: 2px;
+  position: absolute;
+}
+/* line 10, ../sass/components/_composition.scss */
+.composition__photo--p1 {
+  left: 0;
+  top: -2rem;
+}
+/* line 14, ../sass/components/_composition.scss */
+.composition__photo--p2 {
+  right: 0;
+  top: 2rem;
+}
+/* line 19, ../sass/components/_composition.scss */
+.composition__photo--p3 {
+  left: 20%;
+  top: 10rem;
+}
+
 /* line 1, ../sass/pages/_header.scss */
 .main__logo {
   height: 2.1875rem;
@@ -921,7 +944,7 @@ html {
 /* line 4, ../sass/pages/_header.scss */
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(133, 209, 119, 0.8), rgba(40, 181, 134, 0.8)), url(../img/hero.jpg);
+  background-image: linear-gradient(to right bottom, rgba(132, 208, 118, 0.8), rgba(39, 180, 133, 0.8)), url(../img/hero.jpg);
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);

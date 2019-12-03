@@ -188,7 +188,7 @@ $prefixes: ("-moz-", "-webkit-", "-o-", "-ms-", "");
   .btn--#{$name} {
     padding: 0.938em 2.5em;
     text-transform: uppercase;
-    color: btn-dynamically-text-color($bg);
+    color: dynamically-color($bg);
     background-color: $bg;
     @include border-radius($radius);
     @include button-hover($bg);
@@ -258,7 +258,7 @@ $prefixes: ("-moz-", "-webkit-", "-o-", "-ms-", "");
     font-weight: 600;
     margin-top: 1.5rem;
     &:hover {
-      color: btn-dynamically-text-color($color);
+      color: dynamically-color($color);
       background-color: $color;
     }
   }

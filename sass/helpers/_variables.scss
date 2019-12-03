@@ -1,19 +1,7 @@
 //COLORS:
-$color-original: #55c57a;
-// $color-original-light: #7ed56f;
-// $color-original-dark: #28b485;
-
-//$color-original: hsl(140, 49%, 55%);
-$color-hue: adjust-hue($color-original, 20%);
-$color-hue-2: adjust-hue($color-original, -29%);
-$color-original-light: lighten($color-hue-2, 9%);
-
-$color-tempon: darken($color-hue, 12%);
-$color-original-dark: saturate($color-tempon, 15%);
-
-$color-primary: #496ee8;
-$color-secondary: #20c77f;
-$color-tertiary: #e84949;
+$color-original: hsl(140, 49%, 55%);
+$color-original-light: lighten(adjust-hue($color-original, -29%), 9%);
+$color-original-dark: saturate(darken(adjust-hue($color-original, 20%), 12%), 15%);
 
 $color-grey-light: #f7f7f7;
 $color-grey-dark: #777;
@@ -48,4 +36,4 @@ $none: none;
 //--grid system
 $grid-number-col: 12;
 $grid-gutter-vertical: 2rem;
-$grid-gutter-horizontal: 1rem;
+$grid-gutter-horizontal: 7rem;

@@ -32,7 +32,6 @@
 //--Column
 [class^="grid__col"] {
   @include flexbox;
-  @include justify-content(center);
   @include flex-direction(column);
   margin-bottom: $grid-gutter-vertical;
 

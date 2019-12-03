@@ -1,4 +1,4 @@
-@function btn-dynamically-text-color($color) {
+@function dynamically-color($color) {
   @if (lightness($color) > 60) {
     @return $color-grey-dark; // Lighter backgorund, return dark color
   } @else {
