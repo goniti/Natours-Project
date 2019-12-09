@@ -1,5 +1,6 @@
 [class^="grid__col"] {
-  @include media("phablet", "max") {
+  @include media("desktop", "max") {
+    align-items: center;
     &:last-child {
       margin-right: $grid-gutter-horizontal;
     }
@@ -11,7 +12,7 @@
   &--3,
   &--2,
   &--1 {
-    @include media("phablet", "max") {
+    @include media("desktop", "max") {
       flex-basis: 50%;
     }
   }
@@ -22,8 +23,30 @@
   &--10,
   &--11,
   &--12 {
-    @include media("phablet", "max") {
+    @include media("desktop", "max") {
       flex-basis: 98%;
     }
+  }
+}
+.composition {
+  @include media("tablet-small", "max") {
+    width: 100%;
+    display: flex;
+  }
+  &__photo {
+    @include media("tablet-small", "max") {
+      position: initial;
+    }
+    &--p2 {
+      @include media("tablet-small", "max") {
+        margin: -2rem -4rem 1rem -4rem;
+        z-index: 1;
+      }
+    }
+  }
+}
+.about__item {
+  @include media("tablet-small", "max") {
+    width: 90%;
   }
 }
