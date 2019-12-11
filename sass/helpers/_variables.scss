@@ -1,12 +1,12 @@
 //COLORS:
-$white: #fff;
-$primary: #496ee8;
-$secondary: #20c77f;
-$tertiary: #e84949;
-$original: #55c57a;
-$light: #7ed56f;
-$dark: #28b485;
-$darkgrey: #777;
+$color-original: hsl(140, 49%, 55%);
+$color-original-light: lighten(adjust-hue($color-original, -29%), 9%);
+$color-original-dark: saturate(darken(adjust-hue($color-original, 20%), 12%), 15%);
+
+$color-grey-light: #f7f7f7;
+$color-grey-dark: #777;
+$color-white: #fff;
+$color-black: #000;
 
 //Media Queries
 $breakpoints: (
@@ -22,8 +22,18 @@ $breakpoints: (
 
 //Setup
 
-//button
-$btn-color-white: $white;
+//--Header
+$header-gradient-color-start: $color-original-light;
+$header-gradient-color-end: $color-original-dark;
+
+//--button
+$btn-color-white: $color-white;
+$btn-color-green: $color-original;
 $btn-border-rounded: 3.125rem;
 $btn-border-roundedEdge: 1.25rem;
 $none: none;
+
+//--grid system
+$grid-number-col: 12;
+$grid-gutter-vertical: 2rem;
+$grid-gutter-horizontal: 7rem;

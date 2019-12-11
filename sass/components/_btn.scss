@@ -1,8 +1,6 @@
 .btn {
   border: none;
   cursor: pointer;
-  padding: 0.938em 2.5em;
-  text-transform: uppercase;
   text-decoration: none;
   @include transition(all 0.1s ease-in-out);
 
@@ -40,3 +38,8 @@
 
 @include button-bordered("white", $btn-color-white);
 // class= "btn--bordered-white"
+
+// --- button: text --------------------------------------------------------
+
+@include button-text("green", $btn-color-green);
+// class= "btn--text-green"

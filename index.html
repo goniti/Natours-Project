@@ -2,19 +2,24 @@
 <html lang="en">
 
 <head>
+    <!-- CHARSET -->
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+    <!-- Disable Compatibility Mode -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+    <!-- FONTS -->
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/icon-font.css">
+    <!-- FAVICON -->
     <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <!-- LOCAL CSS FILE-->
     <link rel="stylesheet" href="/css/app.css">
+    <!-- TITLE -->
     <title>Natours</title>
 </head>
 
 <body>
+    <!-- HEADER -->
     <header class="header">
         <div class="header__logo">
             <img class="main__logo" src="/img/logo-white.png" alt="Logo">
@@ -26,134 +31,83 @@
             </div>
             <a href="#" class="btn btn--animation btn--pulse-white">Discover our tours</a>
         </div>
-
     </header>
 
-    <!-- <section class="grid-test">
+    <main>
+        <!-- ABOUT -->
+        <section class="about">
+            <h3 class="section__title">
+                Exciting tours for adventurous people
+            </h3>
 
-        <div class="row">
-            <div class="box">
-                <div class="col-1-of-2">Col 1 of 2</div>
-                <div class="col-1-of-2">Col 1 of 2</div>
+            <div class="section__container">
+                <div class="section__warpper--left">
+                    <div class="about__item--1">
+                        <h4 class="about__title"> You're going to fall in love with nature</h4>
+                        <p class="about__paragraph">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro commodi totam necessitatibus
+                            maiores tempora enim explicabo expedita magni soluta voluptatum, aliquam vero voluptates
+                            cum!
+                        </p>
+                        <h4 class="about__title"> Live adventures like you never have before</h4>
+                        <p class="about__paragraph">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro commodi totam necessitatibus
+                            maiores tempora enim explicabo expedita magni soluta voluptatum, aliquam vero voluptates
+                            cum!
+                        </p>
+                        <a href="#" class="btn btn--text-green">Learn more &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="section__warpper--right">
+                    <div class="composition">
+                        <img src="img/nat-1-large.jpg" alt="Photo 1" class="composition__photo composition__photo--p1">
+                        <img src="img/nat-2-large.jpg" alt="Photo 2" class="composition__photo composition__photo--p2">
+                        <img src="img/nat-3-large.jpg" alt="Photo 3" class="composition__photo composition__photo--p3">
+                    </div>
+                </div>
             </div>
-        </div>
-
-        <div class="row">
-            <div class="box">
-                <div class="col-1-of-3">Col 1 of 3</div>
-                <div class="col-1-of-3">Col 1 of 3</div>
-                <div class="col-1-of-3">Col 1 of 3</div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="box">
-                <div class="col-1-of-3">Col 1 of 3</div>
-                <div class="col-2-of-3">Col 2 of 3</div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="box">
-                <div class="col-1-of-4">Col 1 of 4</div>
-                <div class="col-1-of-4">Col 1 of 4</div>
-                <div class="col-1-of-4">Col 1 of 4</div>
-                <div class="col-1-of-4">Col 1 of 4</div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="box">
-                <div class="col-1-of-4">Col 1 of 4</div>
-                <div class="col-1-of-4">Col 1 of 4</div>
-                <div class="col-2-of-4">Col 2 of 4</div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="box">
-                <div class="col-1-of-4">Col 1 of 4</div>
-                <div class="col-3-of-4">Col 3 of 4</div>
-            </div>
-        </div>
-        </div>
-
-
-
-    </section> -->
-
-    <section class="grid__test-Fluid">
-
-        <div class="grid__container">
             <div class="grid__row">
-                <div class="grid__col--lg-1">Col-1</div>
-                <div class="grid__col--lg-1">Col-1</div>
-                <div class="grid__col--lg-1">Col-1</div>
-                <div class="grid__col--lg-1">Col-1</div>
-                <div class="grid__col--lg-1">Col-1</div>
-                <div class="grid__col--lg-1">Col-1</div>
-                <div class="grid__col--lg-1">Col-1</div>
-                <div class="grid__col--lg-1">Col-1</div>
-                <div class="grid__col--lg-1">Col-1</div>
-                <div class="grid__col--lg-1">Col-1</div>
-                <div class="grid__col--lg-1">Col-1</div>
-                <div class="grid__col--lg-1">Col-1</div>
-            </div>
-        </div>
-        <div class="grid__container">
-            <div class="grid__row">
-                <div class="grid__col--lg-12">Col-12</div>
-            </div>
-        </div>
-        <div class="grid__container">
-            <div class="grid__row">
-                <div class="grid__col--lg-6">Col-6</div>
-                <div class="grid__col--lg-6">Col-6</div>
-            </div>
-        </div>
 
-        <div class="grid__container">
-            <div class="grid__row">
-                <div class="grid__col--lg-4">Col-4</div>
-                <div class="grid__col--lg-4">Col-4</div>
-                <div class="grid__col--lg-4">Col-4</div>
-            </div>
-        </div>
-
-        <div class="grid__container">
-            <div class="grid__row">
-                <div class="grid__col--lg-4">Col-4</div>
-                <div class="grid__col--lg-8">Col-8</div>
-            </div>
-        </div>
-
-        <div class="grid__container">
-            <div class="grid__row">
-                <div class="grid__col--lg-3">Col-3</div>
-                <div class="grid__col--lg-3">Col-3</div>
-                <div class="grid__col--lg-3">Col-3</div>
-                <div class="grid__col--lg-3">Col-3</div>
-            </div>
-        </div>
-
-        <div class="grid__container">
-            <div class="grid__row">
-                <div class="grid__col--lg-3">Col-3</div>
-                <div class="grid__col--lg-3">Col-3</div>
-                <div class="grid__col--lg-6">Col-6</div>
-            </div>
-        </div>
-
-        <div class="grid__container">
-            <div class="grid__row">
-                <div class="grid__col--lg-3">Col-3</div>
-                <div class="grid__col--lg-9">Col-9</div>
-            </div>
-        </div>
+                <div class="grid__col--6 grid__col--text-right">
+                    <div class="about__item">
+                        <h4 class="about__title"> You're going to fall in love with nature</h4>
+                        <p class="about__paragraph">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro commodi totam necessitatibus
+                            maiores tempora enim explicabo expedita magni soluta voluptatum, aliquam vero voluptates
+                            cum!
+                        </p>
+                        <h4 class="about__title"> Live adventures like you never have before</h4>
+                        <p class="about__paragraph">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro commodi totam necessitatibus
+                            maiores tempora enim explicabo expedita magni soluta voluptatum, aliquam vero voluptates
+                            cum!
+                        </p>
+                        <a href="#" class="btn btn--text-green">Learn more &rarr;</a>
+                    </div>
+                </div>
 
 
+                <div class="grid__col--6">
+                    <div class="composition">
+                        <img src="img/nat-1-large.jpg" alt="Photo 1" class="composition__photo composition__photo--p1">
+                        <img src="img/nat-2-large.jpg" alt="Photo 2" class="composition__photo composition__photo--p2">
+                        <img src="img/nat-3-large.jpg" alt="Photo 3" class="composition__photo composition__photo--p3">
+                    </div>
+                </div>
 
-    </section>
+            </div>
+
+        </section>
+        <!-- FEATURES -->
+        <section class="features">
+            <i class="icon--globe"></i>
+            <i class="icon--compass"></i>
+            <i class="icon--map"></i>
+            <i class="icon--heart"></i>
+        </section>
+
+    </main>
 </body>
 
 </html>
