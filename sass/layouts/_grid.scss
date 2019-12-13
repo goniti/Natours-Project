@@ -21,41 +21,15 @@
   @include justify-content(center);
 }
 
-// Grid System
-
-//--Row
-.grid__row {
+.section__container {
   @include flexbox;
-  @include flex-wrap(wrap);
 }
 
-//--Column
-[class^="grid__col"] {
+.section__warpper--left {
+  @include justify-content(flex-end);
+}
+
+[class^="section__warpper"] {
   @include flexbox;
-  @include flex-direction(column);
-  margin-bottom: $grid-gutter-vertical;
-
-  &:not(:last-child) {
-    margin-right: $grid-gutter-horizontal;
-  }
-}
-.grid__col {
-  &--text-right {
-    @include align-items(flex-end);
-  }
-  &--text-left {
-    @include align-items(flex-start);
-  }
-  &--text-centered {
-    @include align-items(center);
-  }
-}
-@for $i from 1 through 12 {
-  .grid__col--#{$i} {
-    flex-basis: calc(100% / #{$grid-number-col} * #{$i});
-    flex: 1 0 6%;
-  }
-  .col__fixed--width-#{$i} {
-    flex: 0 0 calc(100% / #{$grid-number-col} * #{$i});
-  }
+  flex: 0 0 48vw;
 }

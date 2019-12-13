@@ -1,0 +1,14 @@
+.icon {
+  &--globe {
+    @include icon("globe-green", 6em);
+  }
+  &--compass {
+    @include icon("compass-green", 6em);
+  }
+  &--map {
+    @include icon("map-green", 6em);
+  }
+  &--heart {
+    @include icon("heart-green", 6em);
+  }
+}

@@ -182,7 +182,16 @@ $prefixes: ("-moz-", "-webkit-", "-o-", "-ms-", "");
   @include animation-timing-function($function);
   @include animation-fill-mode($mode);
 }
-
+// ICON
+@mixin icon($name, $size) {
+  $url: "../img/font-icon/SVG/#{$name}.svg";
+  background: url($url);
+  background-repeat: no-repeat;
+  background-size: $size;
+  display: inline-block;
+  height: $size;
+  width: $size;
+}
 // BUTTONS
 @mixin button($name, $bg, $radius) {
   .btn--#{$name} {

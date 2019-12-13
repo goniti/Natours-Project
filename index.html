@@ -2,19 +2,24 @@
 <html lang="en">
 
 <head>
+    <!-- CHARSET -->
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+    <!-- Disable Compatibility Mode -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+    <!-- FONTS -->
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/icon-font.css">
+    <!-- FAVICON -->
     <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <!-- LOCAL CSS FILE-->
     <link rel="stylesheet" href="/css/app.css">
+    <!-- TITLE -->
     <title>Natours</title>
 </head>
 
 <body>
+    <!-- HEADER -->
     <header class="header">
         <div class="header__logo">
             <img class="main__logo" src="/img/logo-white.png" alt="Logo">
@@ -26,18 +31,17 @@
             </div>
             <a href="#" class="btn btn--animation btn--pulse-white">Discover our tours</a>
         </div>
-
     </header>
 
     <main>
+        <!-- ABOUT -->
         <section class="about">
             <h3 class="section__title">
                 Exciting tours for adventurous people
             </h3>
 
-            <div class="grid__row">
-                <div class="grid__col--6 grid__col--text-right">
-
+            <div class="section__container">
+                <div class="section__warpper--left">
                     <div class="about__item">
                         <h4 class="about__title"> You're going to fall in love with nature</h4>
                         <p class="about__paragraph">
@@ -45,31 +49,96 @@
                             maiores tempora enim explicabo expedita magni soluta voluptatum, aliquam vero voluptates
                             cum!
                         </p>
-
                         <h4 class="about__title"> Live adventures like you never have before</h4>
                         <p class="about__paragraph">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro commodi totam necessitatibus
                             maiores tempora enim explicabo expedita magni soluta voluptatum, aliquam vero voluptates
                             cum!
                         </p>
-
                         <a href="#" class="btn btn--text-green">Learn more &rarr;</a>
                     </div>
                 </div>
-                <div class="grid__col--6">
-                    <div class="composition">
-                        <img src="img/nat-1-large.jpg" alt="Photo 1" class="composition__photo composition__photo--p1">
-                        <img src="img/nat-2-large.jpg" alt="Photo 2" class="composition__photo composition__photo--p2">
-                        <img src="img/nat-3-large.jpg" alt="Photo 3" class="composition__photo composition__photo--p3">
-                    </div>
+
+                <div class="section__warpper--right">
+                    <figure class="photo">
+                        <img src="img/nat-1-large.jpg" alt="Photo 01" class="photo__img--01">
+                        <img src="img/nat-2-large.jpg" alt="Photo 02" class="photo__img--02">
+                        <img src="img/nat-3-large.jpg" alt="Photo 03" class="photo__img--03">
+                    </figure>
                 </div>
             </div>
 
+        </section>
+        <!-- FEATURES -->
+        <section class="features">
+            <!-- <i class="icon--globe"></i>
+            <i class="icon--compass"></i>
+            <i class="icon--map"></i>
+            <i class="icon--heart"></i> -->
+
+            <div>
+                <ul class="cards">
+                    <li class="cards__item">
+                        <div class="card">
+                            <div class="card__header">
+                                <i class="icon--compass"></i>
+                            </div>
+                            <div class="card__content">
+                                <div class="card__title">Flex</div>
+                                <p class="card__text">This is the shorthand for flex-grow, flex-shrink and flex-basis
+                                    combined. The second and third parameters (flex-shrink and flex-basis) are optional.
+                                    Default is 0 1 auto. </p>
+                                <button class="btn btn--block card__btn">Button</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cards__item">
+                        <div class="card">
+                            <div class="card__header">
+                                <i class="icon--map"></i>
+                            </div>
+                            <div class="card__content">
+                                <div class="card__title">Flex Grow</div>
+                                <p class="card__text">This defines the ability for a flex item to grow if necessary. It
+                                    accepts a unitless value that serves as a proportion. It dictates what amount of the
+                                    available space inside the flex container the item should take up.</p>
+                                <button class="btn btn--block card__btn">Button</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cards__item">
+                        <div class="card">
+                            <div class="card__header">
+                                <i class="icon--heart"></i>
+                            </div>
+                            <div class="card__content">
+                                <div class="card__title">Flex Shrink</div>
+                                <p class="card__text">This defines the ability for a flex item to shrink if necessary.
+                                    Negative numbers are invalid.</p>
+                                <button class="btn btn--block card__btn">Button</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cards__item">
+                        <div class="card">
+                            <div class="card__header">
+                                <i class="icon--globe"></i>
+                            </div>
+                            <div class="card__content">
+                                <div class="card__title">Flex Basis</div>
+                                <p class="card__text">This defines the default size of an element before the remaining
+                                    space is distributed. It can be a length (e.g. 20%, 5rem, etc.) or a keyword. The
+                                    auto keyword means "look at my width or height property."</p>
+                                <button class="btn btn--block card__btn">Button</button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
 
         </section>
+
     </main>
-
-
 </body>
 
 </html>

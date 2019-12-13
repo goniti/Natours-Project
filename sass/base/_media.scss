@@ -1,52 +1,53 @@
-[class^="grid__col"] {
+// DESKTOP
+.section__container {
   @include media("desktop", "max") {
-    align-items: center;
-    &:last-child {
-      margin-right: $grid-gutter-horizontal;
-    }
+    @include flexbox;
+    @include flex-wrap(wrap);
   }
 }
-.grid__col {
-  &--5,
-  &--4,
-  &--3,
-  &--2,
-  &--1 {
+.section__warpper {
+  &--left,
+  &--right {
     @include media("desktop", "max") {
-      flex-basis: 50%;
-    }
-  }
-  &--6,
-  &--7,
-  &--8,
-  &--9,
-  &--10,
-  &--11,
-  &--12 {
-    @include media("desktop", "max") {
-      flex-basis: 98%;
+      @include justify-content(center);
+      flex: 0 1 100vw;
     }
   }
 }
-.composition {
-  @include media("tablet-small", "max") {
-    width: 100%;
-    display: flex;
-  }
-  &__photo {
-    @include media("tablet-small", "max") {
-      position: initial;
-    }
-    &--p2 {
-      @include media("tablet-small", "max") {
-        margin: -2rem -4rem 1rem -4rem;
-        z-index: 1;
-      }
-    }
-  }
-}
+
 .about__item {
+  @include media("desktop", "max") {
+    margin-bottom: 2rem;
+    padding-right: 0;
+    width: 58%;
+  }
+}
+
+// TABLET-SMALL
+
+.section__warpper {
+  &--right {
+    @include media("tablet-small", "max") {
+      @include align-items(flex-start);
+    }
+  }
+}
+[class^="photo__img"] {
   @include media("tablet-small", "max") {
-    width: 90%;
+    position: static;
+    width: 40%;
+  }
+}
+.photo {
+  @include media("tablet-small", "max") {
+    @include flexbox;
+    @include justify-content(center);
+    width: 85%;
+  }
+  &__img--02 {
+    @include media("tablet-small", "max") {
+      margin: -0.4rem -2rem;
+      z-index: 10;
+    }
   }
 }
