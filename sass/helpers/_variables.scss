@@ -3,6 +3,10 @@ $color-original: hsl(140, 49%, 55%);
 $color-original-light: lighten(adjust-hue($color-original, -29%), 9%);
 $color-original-dark: saturate(darken(adjust-hue($color-original, 20%), 12%), 15%);
 
+$color-orange-light: #ffb900;
+$color-orange-dark: #ff7730;
+$color-blue-light: #2998ff;
+$color-blue-dark: #5643fa;
 $color-grey-light: #f7f7f7;
 $color-grey-dark: #777;
 $color-white: #fff;
@@ -37,3 +41,6 @@ $none: none;
 $grid-number-col: 12;
 $grid-gutter-vertical: 2rem;
 $grid-gutter-horizontal: 7rem;
+
+//--cards
+$cards-gutter: 5rem;

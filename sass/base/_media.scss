@@ -1,11 +1,11 @@
 // DESKTOP
-.section__container {
+.section__warpper {
   @include media("desktop", "max") {
     @include flexbox;
     @include flex-wrap(wrap);
   }
 }
-.section__warpper {
+.section__container {
   &--left,
   &--right {
     @include media("desktop", "max") {
@@ -25,7 +25,7 @@
 
 // TABLET-SMALL
 
-.section__warpper {
+.section__container {
   &--right {
     @include media("tablet-small", "max") {
       @include align-items(flex-start);

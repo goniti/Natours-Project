@@ -21,15 +21,21 @@
   @include justify-content(center);
 }
 
+.section__warpper {
+  @include flexbox;
+}
+[class^="section__container"] {
+  @include flexbox;
+}
 .section__container {
-  @include flexbox;
+  flex: 0 0 65vw;
+  margin: 0 auto;
+  justify-content: center;
 }
-
-.section__warpper--left {
+.section__container--left {
   @include justify-content(flex-end);
+  flex: 0 0 48vw;
 }
-
-[class^="section__warpper"] {
-  @include flexbox;
+.section__container--right {
   flex: 0 0 48vw;
 }

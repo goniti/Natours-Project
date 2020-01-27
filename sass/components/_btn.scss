@@ -21,7 +21,7 @@
 // --- button: sizes -----------------------------------------------------------
 
 @include button-size("small", 0.75rem);
-@include button-size("large", 1.25rem);
+@include button-size("large", 2rem);
 // class= "btn--large"
 
 // --- button: variants --------------------------------------------------------
@@ -36,7 +36,7 @@
 
 // --- button: bordered --------------------------------------------------------
 
-@include button-bordered("white", $btn-color-white);
+@include button-bordered("black", $btn-color-white);
 // class= "btn--bordered-white"
 
 // --- button: text --------------------------------------------------------
